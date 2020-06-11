@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def simpleRegressionCoeefficients(X:np.array(),Y:np.array())->list:
+def simpleRegressionCoeefficients(X:np.array,Y:np.array)->list:
     data=pd.DataFrame()
     data['X']=pd.Series(X)
     data['Y']=pd.Series(Y)
