@@ -1,7 +1,7 @@
 import pandas as pd
-import nupy as np
+import numpy as np
 
-def simpleRegressionCoeefficients(X:np.array,Y:np.array)-->list:
+def simpleRegressionCoeefficients(X:np.array(),Y:np.array())->list:
     data=pd.DataFrame()
     data['X']=pd.Series(X)
     data['Y']=pd.Series(Y)
@@ -12,7 +12,7 @@ def simpleRegressionCoeefficients(X:np.array,Y:np.array)-->list:
 
     return list([b0,b1])
 
-def rmse(X:np.array,Y:np.array-->float:
+def rmse(X:np.array,Y:np.array)->float:
     data=pd.DataFrame()
     data['X']=pd.Series(X)
     data['Y']=pd.Series(Y)
